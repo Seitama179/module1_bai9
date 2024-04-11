@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhap do dai canh 1");
+    let b = +prompt("nhap do dai canh 2");
+    let c = +prompt("nhap do dai canh 3");
+    if (a == b ){
+        if ((c*c) == (a*a + b*b)){
+            alert"tam giac vuong can";
+        } else alert("tam giac khong vuong can");
+    } else if (a == c) {
+        if ((b*b) == (a*a + c*c)){
+            alert"tam giac vuong can";
+        } else alert("tam giac khong vuong can");
+    } else if (b == c) {
+        if ((a*a) == (b*b + c*c)){
+            alert"tam giac vuong can";
+        } else alert("tam giac khong vuong can");
+    }
+</script>
+</body>
+</html>

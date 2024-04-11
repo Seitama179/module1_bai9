@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="luong" placeholder="wage">
+<input type="number" id="time" placeholder="time">
+<button onclick="thuong()">Nhap</button>
+<script>
+    function thuong(){
+    let luong = +document.getElementById("luong").value
+    let time = +document.getElementById("time").value
+    let bonus
+    if(time >= 200){
+        bonus = luong * 0.2;
+        document.writeln("tien thuong " + bonus);
+
+    } else if( time >= 100){
+        let bonus = luong * 0.1;
+        document.writeln("tien thuong " + bonus);
+    } else {document.writeln("khong thuong");
+    }
+    }
+</script>
+</body>
+</html>
