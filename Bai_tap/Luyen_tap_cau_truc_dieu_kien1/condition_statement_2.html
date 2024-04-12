@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuổi học sinh</title>
+</head>
+<body>
+<p>Nhập vào số tuổi HS (số nguyên dương):</p>
+<input type="number" id="tuoi" min="0" max="50">
+<button onclick="rate()">Nhập</button>
+<p id="result"></p>
+<script>
+    function rate(){
+        let age = +document.getElementById("tuoi").value;
+        if (age >=15){
+            document.writeln("Học sinh đủ tuổi vào lớp 10");
+        } else if (age >=0){
+            document.writeln("Học sinh Không đủ tuổi vào lớp 10");
+        } else {
+            document.writeln("Nhập lại tuổi! Tuổi là số nguyên dương!");}
+    }
+</script>
+</body>
+</html>

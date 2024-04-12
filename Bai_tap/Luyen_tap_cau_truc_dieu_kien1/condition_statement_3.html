@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập vào 1 số nguyên:</p>
+<input type="number" id="num" >
+<button onclick="check()">Nhập</button>
+<p id="result"></p>
+<script>
+    function check(){
+        let num = +document.getElementById("num").value;
+        if (Number.isInteger(num) == true){
+            if (num >0){
+                document.getElementById("result").innerHTML= "Số "+ num+ " là số nguyên dương";
+            }  else {
+                document.getElementById("result").innerHTML= "Số "+ num+ " là số nguyên âm";
+            }
+        } else {
+            alert("Nhập vào số nguyên!");
+        }
+    }
+</script>
+</body>
+</html>
